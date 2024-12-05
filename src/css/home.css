@@ -1,0 +1,93 @@
+.splide__track {
+    height: 100%;
+}
+
+.redMaquette{
+    color: #EA4949;
+}
+
+.bg-redMaquette{
+    background: #EA4949;
+}
+
+.bg-greenMaquette{
+    background: #3D9E7D;
+}
+
+.bg-bleuMaquette{
+    background: #182B3A;
+}
+
+.splide__arrow {
+    background: #EA4949;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    z-index: 30;
+    opacity: 1;
+}
+
+.splide__arrow--next img{
+    transform: rotate(180deg);
+}
+
+.splide__pagination {
+    display: none;
+}
+
+.soulignement{
+    background: #BEBE7A;
+    height: 8px;
+    width: 90px;
+    display: block;
+    transition: 0.3s;
+}
+.ombreSousBloc{
+    background: url(../img/ombre_soulignement.svg) no-repeat;
+    background-size: cover;
+    height: 58px;
+    width: 160px;
+    display: block;
+    left: 33px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.sectionAutoBot a:hover .soulignement {
+    width: 200px;
+    transition: 0.3s;
+}
+.sectionAutoBot a:hover .ombreSousBloc {
+    width: 350px;
+    transition: 0.3s;
+    left: 75px;
+}
+
+.blocRotate img{
+    bottom: -190px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.blocRotate .bg-redMaquette{
+    transform: rotate(349deg);
+    padding: 20px 20px 100px 70px;
+    bottom: -230px;
+    transition: 0.5s;
+}
+
+.blocRotate img.show{
+    bottom: -50px;
+    transition: 0.5s;
+}
+
+.blocRotate .bg-redMaquette.show{
+    bottom: -30px;
+    transition: 0.5s;
+}
+
+.degraderVert{
+    top: -27px;
+    height: 150px;
+    background: transparent linear-gradient(180deg, #3D9E7D00 0%, #3D9E7D 18%, #3D9E7D 100%) 0% 0% no-repeat padding-box;
+}
