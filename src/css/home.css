@@ -2,6 +2,10 @@
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6, p, span{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .redMaquette{
     color: #EA4949;
 }
@@ -21,10 +25,13 @@
 .splide__arrow {
     background: #EA4949;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     z-index: 30;
     opacity: 1;
+    @media (max-width: 1280px) {
+        display: none;
+    }
 }
 
 .splide__arrow--next img{
@@ -33,6 +40,24 @@
 
 .splide__pagination {
     display: none;
+    @media (max-width: 1280px) {
+        display: flex;
+    }
+}
+
+@media (max-width: 1280px) {
+    .splide__pagination__page {
+        background: #3D9E7D;
+        height: 25px;
+        width: 25px;
+        opacity: 1;
+    }
+    .splide__pagination__page.is-active {
+        background: #EA4949;
+        height: 30px;
+        width: 30px;
+        transform: inherit;
+    }
 }
 
 .soulignement{
@@ -51,6 +76,19 @@
     left: 33px;
     position: relative;
     transition: 0.3s;
+    @media (max-width: 1280px) {
+        height: 30px;
+    }
+}
+
+.ombreActus{
+    background: url(../img/ombreUnePetit.svg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    transition: 0.3s;
 }
 
 .sectionAutoBot a:hover .soulignement {
@@ -67,6 +105,9 @@
     bottom: -190px;
     position: absolute;
     transition: 0.5s;
+    @media (max-width: 1550px) {
+        height: 150px;
+    }
 }
 
 .blocRotate .bg-redMaquette{
@@ -74,20 +115,112 @@
     padding: 20px 20px 100px 70px;
     bottom: -230px;
     transition: 0.5s;
+    @media (max-width: 1550px) {
+        transition: 0.5s;
+        height: 150px;
+        left: 5px;
+        padding: 44px 20px 138px 70px;
+    }
 }
 
 .blocRotate img.show{
     bottom: -50px;
     transition: 0.5s;
+    @media (max-width: 1550px) {
+        bottom: -15px;
+        transition: 0.5s;
+        height: 150px;
+        left: 5px;
+    }
 }
 
 .blocRotate .bg-redMaquette.show{
     bottom: -30px;
     transition: 0.5s;
+    @media (max-width: 1550px) {
+        bottom: -66px;
+    }
 }
 
 .degraderVert{
     top: -27px;
     height: 150px;
     background: transparent linear-gradient(180deg, #3D9E7D00 0%, #3D9E7D 18%, #3D9E7D 100%) 0% 0% no-repeat padding-box;
+}
+
+.parallelogram {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #152533;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 62%);
+    bottom: 0;
+}
+
+.parallelogramAffiche{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #152533;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 79%);
+    bottom: -100px;
+}
+
+.petitParallelogram{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: #152533;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 5%);
+    bottom: 0;
+}
+
+.goldText{
+    color: #BEBE7A;
+}
+
+.sectionActus .goldText::after{
+    position: relative;
+    content: url("../img/flecheOr.svg");
+    display: block;
+    left: 20px;
+}
+
+.hashedBot{
+    background: url(../img/hashBot.svg) no-repeat;
+    background-size: cover;
+    height: 10%;
+    width: 115%;
+    left: -20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.telMobile::before{
+    content: "";
+    background: url(../img/picto_telephone.svg) no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: -75px;
+    top: -15px;
+    height: 100px;
+    width: 55px;
+}
+
+.blocActu a:hover p{
+    color: #EA4949;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.blocRotate:hover img {
+    animation: shake 0.5s ease-in-out;
 }
