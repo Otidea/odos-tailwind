@@ -150,20 +150,32 @@ h1, h2, h3, h4, h5, h6, p, span{
 
 .parallelogram {
     position: absolute;
-    width: 100%;
+    width: 0;
     height: 100%;
     background-color: #152533;
     clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 62%);
     bottom: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.parallelogram.show {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
 }
 
 .parallelogramAffiche{
     position: absolute;
-    width: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
     height: 500px;
     background-color: #152533;
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 79%);
     bottom: -100px;
+}
+
+.parallelogramAffiche.show {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
 }
 
 .petitParallelogram{

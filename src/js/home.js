@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
+            rootMargin: "0px 0px -100px 0px"
         }
     );
 
@@ -43,4 +43,27 @@ document.addEventListener('DOMContentLoaded', function () {
             }, index * 200);
         });
     }
+
+    //APPARITION OMBRES
+
+    const shadowNews = document.querySelectorAll(".parallelogram");
+    const shadowAgenda = document.querySelectorAll(".parallelogramAffiche");
+
+    const observerShadow = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const group = entry.target;
+                    group.classList.add("show");
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+            rootMargin: "0px 0px -300px 0px"
+        }
+    );
+
+    shadowNews.forEach(group => observerShadow.observe(group));
+    shadowAgenda.forEach(group => observerShadow.observe(group));
 });
