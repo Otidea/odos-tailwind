@@ -224,3 +224,15 @@ h1, h2, h3, h4, h5, h6, p, span{
 .blocRotate:hover img {
     animation: shake 0.5s ease-in-out;
 }
+
+.blocAgenda{
+    @media (min-width: 2000px) {
+        width: 70%;
+    }
+}
+
+.blocAgenda .goldText{
+    @media (min-width: 2000px) {
+        left: 13rem;
+    }
+}
