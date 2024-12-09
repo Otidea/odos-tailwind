@@ -8,4 +8,39 @@ document.addEventListener('DOMContentLoaded', function () {
             element.classList.add('show');
         });
     }, 100);
+
+    //APPARITION DATES
+
+    const digitGroups = document.querySelectorAll(".digit-group");
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const group = entry.target;
+                    group.classList.add("appear");
+                    animateDigits(group);
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        }
+    );
+
+    digitGroups.forEach(group => observer.observe(group));
+
+    function animateDigits(group) {
+        const targetValue = group.dataset.value.split("");
+        const digits = group.querySelectorAll(".digit");
+
+        digits.forEach((digit, index) => {
+            const value = targetValue[index] || "0";
+            setTimeout(() => {
+                digit.textContent = value;
+                digit.style.animationDelay = `${index * 0.2}s`;
+            }, index * 200);
+        });
+    }
 });

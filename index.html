@@ -237,24 +237,33 @@
     </div>
     <div class="w-full 2xl:w-[40%] h-full flex flex-col justify-center items-center blocAgenda">
         <div class="flex w-full justify-center sm:justify-end">
+
             <div class="flex flex-col relative">
                 <div class="flex flex-col justify-center items-center bg-greenMaquette p-4 h-fit">
                     <div class="flex flex-col">
-                        <span class="text-7xl text-white font-bold text-center">13</span>
+                        <div class="digit-group hidden-group" data-value="13">
+                            <div class="digit text-7xl">0</div>
+                            <div class="digit text-7xl">0</div>
+                        </div>
                         <span class="text-2xl text-white uppercase text-center">nov.</span>
                         <span class="text-sm text-white text-center">2024</span>
                     </div>
                     <img src="./src/img/flecheRoug.svg" alt="fleche rouge" class="mt-4 mb-2">
                     <div class="flex flex-col">
-                        <span class="text-7xl text-white font-bold text-center">16</span>
+                        <div class="digit-group hidden-group" data-value="16">
+                            <div class="digit text-7xl">0</div>
+                            <div class="digit text-7xl">0</div>
+                        </div>
                         <span class="text-2xl text-white uppercase text-center">nov.</span>
                         <span class="text-sm text-white text-center">2024</span>
                     </div>
                 </div>
                 <div class="petitParallelogram"></div>
             </div>
-            <a href="#">
-                <img src="./src/img/affiche_bd.jpg" alt="affiche" class="object-cover h-[400px]">
+
+
+            <a href="#" class="h-[400px] w-[283px] overflow-hidden">
+                <img src="./src/img/affiche_bd.jpg" alt="affiche" class="object-cover hover:w-[105%] hover:h-[105%] h-full w-full transition-all duration-500 ease-in-out">
             </a>
             <div class="hidden sm:flex w-1/4 relative">
                 <div class="parallelogramAffiche"></div>
