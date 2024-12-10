@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --green: #3D9E7D;
+            --red: #EA4949;
+            --blue: #182B3A;
+            --gold: #BEBE7A;
+            --dark-blue: #152533;
+        }
+    </style>
     <link href="./src/assets/splide-4.1.3/dist/css/splide.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <link href="./src/css/output.css" rel="stylesheet">
-    <link href="./src/css/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <nav class="z-[90] flex absolute top-0 w-full">
@@ -19,9 +28,18 @@
         </a>
     </div>
 </nav>
-<section class="flex flex-col xl:h-screen w-full relative">
-    <img src="./src/img/deco_coin_droit.svg" class="hidden lg:block absolute top-0 right-0 z-20 pointer-events-none h-[250px] xl:h-[350px]" alt="deco coin droit">
-    <img src="./src/img/deco_coin_gauche.svg" class="absolute top-0 left-0 z-10 h-[625px] pointer-events-none object-cover" alt="deco coin gauche">
+<h1 class="hidden">MAIRIE ODOS</h1>
+<main class="flex flex-col xl:h-screen w-full relative">
+    <img src="./src/img/deco_coin_droit.svg"
+         class="hidden lg:block absolute top-0 right-0 z-20 pointer-events-none h-[250px] xl:h-[350px]"
+         alt="deco coin droit"
+         aria-hidden="true"
+    >
+    <img src="./src/img/deco_coin_gauche.svg"
+         aria-hidden="true"
+         class="absolute top-0 left-0 z-10 h-[625px] pointer-events-none object-cover"
+         alt="deco coin gauche"
+    >
     <div class="splide h-[100vh] xl:h-[80%] w-full">
         <div class="splide__arrows splide__arrows--ltr z-30">
             <button
@@ -46,31 +64,47 @@
         <div class="splide__track">
             <ul class="splide__list">
                 <li class="splide__slide">
-                    <a href="" target="_blank" rel="autoPromoEncart1" class="flex flex-col justify-center items-center h-full">
-                        <img src="./src/img/bg_header.png" alt="fond" class="h-[100%] absolute w-full object-cover z-10">
-                        <h2 class="text-white z-20 font-bold text-4xl bg-redMaquette py-2 px-10 text-center">VISITE GUIDEE HISTORIQUE</h2>
-                        <h3 class="redMaquette z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">JEUDI 4 SEPTEMBRE A 14H</h3>
+                    <a href="TODO:" target="_blank" rel="autoPromoEncart1"
+                       class="flex flex-col justify-center items-center h-full">
+                        <img src="./src/img/bg_header.png" alt="fond"
+                             class="h-[100%] absolute w-full object-cover z-10">
+                        <h2 class="text-white z-20 font-bold text-4xl bg-custom-color-2 py-2 px-10 text-center">VISITE
+                            GUIDEE HISTORIQUE</h2>
+                        <h3 class="text-custom-color-2 z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">
+                            JEUDI 4 SEPTEMBRE A 14H</h3>
                     </a>
                 </li>
                 <li class="splide__slide">
-                    <a href="" target="_blank" rel="autoPromoEncart2" class="flex flex-col justify-center items-center h-full">
-                        <img src="./src/img/bg_header.png" alt="fond" class="h-[100%] absolute w-full object-cover z-10">
-                        <h2 class="text-white z-20 font-bold text-4xl bg-redMaquette py-2 px-10 text-center">VISITE GUIDEE HISTORIQUE</h2>
-                        <h3 class="redMaquette z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">JEUDI 4 SEPTEMBRE A 14H</h3>
+                    <a href="TODO:" target="_blank" rel="autoPromoEncart2"
+                       class="flex flex-col justify-center items-center h-full">
+                        <img src="./src/img/bg_header.png" alt="fond"
+                             class="h-[100%] absolute w-full object-cover z-10">
+                        <h2 class="text-white z-20 font-bold text-4xl bg-custom-color-2 py-2 px-10 text-center">VISITE
+                            GUIDEE HISTORIQUE</h2>
+                        <h3 class="text-custom-color-2 z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">
+                            JEUDI 4 SEPTEMBRE A 14H</h3>
                     </a>
                 </li>
                 <li class="splide__slide">
-                    <a href="" target="_blank" rel="autoPromoEncart3" class="flex flex-col justify-center items-center h-full">
-                        <img src="./src/img/bg_header.png" alt="fond" class="h-[100%] absolute w-full object-cover z-10">
-                        <h2 class="text-white z-20 font-bold text-4xl bg-redMaquette py-2 px-10">VISITE GUIDEE HISTORIQUE</h2>
-                        <h3 class="redMaquette z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">JEUDI 4 SEPTEMBRE A 14H</h3>
+                    <a href="TODO:" target="_blank" rel="autoPromoEncart3"
+                       class="flex flex-col justify-center items-center h-full">
+                        <img src="./src/img/bg_header.png" alt="fond"
+                             class="h-[100%] absolute w-full object-cover z-10">
+                        <h2 class="text-white z-20 font-bold text-4xl bg-custom-color-2 py-2 px-10">VISITE GUIDEE
+                            HISTORIQUE</h2>
+                        <h3 class="text-custom-color-2 z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">
+                            JEUDI 4 SEPTEMBRE A 14H</h3>
                     </a>
                 </li>
                 <li class="splide__slide">
-                    <a href="" target="_blank" rel="autoPromoEncart4" class="flex flex-col justify-center items-center h-full">
-                        <img src="./src/img/bg_header.png" alt="fond" class="h-[100%] absolute w-full object-cover z-10">
-                        <h2 class="text-white z-20 font-bold text-4xl bg-redMaquette py-2 px-10 text-center">VISITE GUIDEE HISTORIQUE</h2>
-                        <h3 class="redMaquette z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">JEUDI 4 SEPTEMBRE A 14H</h3>
+                    <a href="TODO:" target="_blank" rel="autoPromoEncart4"
+                       class="flex flex-col justify-center items-center h-full">
+                        <img src="./src/img/bg_header.png" alt="fond"
+                             class="h-[100%] absolute w-full object-cover z-10">
+                        <h2 class="text-white z-20 font-bold text-4xl bg-custom-color-2 py-2 px-10 text-center">VISITE
+                            GUIDEE HISTORIQUE</h2>
+                        <h3 class="text-custom-color-2 z-20 font-bold text-xl bg-white py-1 px-10 relative xl:left-44 text-center">
+                            JEUDI 4 SEPTEMBRE A 14H</h3>
                     </a>
                 </li>
             </ul>
@@ -78,8 +112,8 @@
     </div>
     <div class="hidden xl:block h-[20%] w-full relative min-h-[195px]">
         <div class="absolute degraderVert w-full"></div>
-        <div class="flex justify-around items-center w-full h-full bg-greenMaquette sectionAutoBot overflow-hidden">
-            <a class="flex-1 flex h-full" href="#">
+        <div class="flex justify-around items-center w-full h-full bg-custom-color-1 sectionAutoBot overflow-hidden">
+            <a class="flex-1 flex h-full" href="TODO:">
                 <div class="flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-xl">DEMARCHES</h4>
@@ -92,7 +126,7 @@
                     <div class="bg-white w-[1px] h-[60%] absolute right-0"></div>
                 </div>
             </a>
-            <a class="flex-1 flex h-full" href="#">
+            <a class="flex-1 flex h-full" href="TODO:">
                 <div class="flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-xl">SERVICES</h4>
@@ -105,7 +139,7 @@
                     <div class="bg-white w-[1px] h-[60%] absolute right-0"></div>
                 </div>
             </a>
-            <a class="flex-1 flex h-full" href="#">
+            <a class="flex-1 flex h-full" href="TODO:">
                 <div class="flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-xl">TOUTE VOTRE</h4>
@@ -118,7 +152,7 @@
                     <div class="bg-white w-[1px] h-[60%] absolute right-0"></div>
                 </div>
             </a>
-            <a class="flex-1 flex h-full" href="#">
+            <a class="flex-1 flex h-full" href="TODO:">
                 <div class="flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-xl">PORTAIL</h4>
@@ -131,21 +165,21 @@
                     <div class="bg-white w-[1px] h-[60%] absolute right-0"></div>
                 </div>
             </a>
-            <a class="flex-1 flex h-full" href="#">
+            <a class="flex-1 flex h-full" href="TODO:">
                 <div class="flex flex-col justify-center items-center h-full flex-1 relative blocRotate">
-                    <div class="flex flex-col justify-center items-center absolute bottom-0 bg-redMaquette">
+                    <div class="flex flex-col justify-center items-center absolute bottom-0 bg-custom-color-2">
                         <h4 class="font-bold text-white text-2xl">TELECHARGER</h4>
                         <h5 class="text-white text-2xl font-light text-nowrap">ODOS NEOCITY</h5>
                     </div>
-                    <img src="./src/img/tel-ombre.svg" alt="ombre" class="absolute" />
+                    <img src="./src/img/tel-ombre.svg" alt="ombre" class="absolute"/>
                 </div>
             </a>
         </div>
     </div>
     <div class="block xl:hidden w-full relative">
         <div class="absolute degraderVert w-full"></div>
-        <div class="flex justify-center flex-col items-center w-full h-full bg-greenMaquette sectionAutoBot overflow-hidden">
-            <a class="flex-1 flex w-full border-b border-white" href="#">
+        <div class="flex justify-center flex-col items-center w-full h-full bg-custom-color-1 sectionAutoBot overflow-hidden">
+            <a class="flex-1 flex w-full border-b border-white" href="TODO:">
                 <div class="py-10 flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-2xl">DEMARCHES</h4>
@@ -157,7 +191,7 @@
                     </div>
                 </div>
             </a>
-            <a class="flex-1 flex w-full border-b border-white" href="#">
+            <a class="flex-1 flex w-full border-b border-white" href="TODO:">
                 <div class="py-10 flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-2xl">SERVICES</h4>
@@ -169,7 +203,7 @@
                     </div>
                 </div>
             </a>
-            <a class="flex-1 flex w-full border-b border-white" href="#">
+            <a class="flex-1 flex w-full border-b border-white" href="TODO:">
                 <div class="py-10 flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-2xl">TOUT VOTRE</h4>
@@ -181,7 +215,7 @@
                     </div>
                 </div>
             </a>
-            <a class="flex-1 flex w-full border-b border-white" href="#">
+            <a class="flex-1 flex w-full border-b border-white" href="TODO:">
                 <div class="py-10 flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="font-bold text-white text-2xl">PORTAIL</h4>
@@ -193,7 +227,7 @@
                     </div>
                 </div>
             </a>
-            <a class="flex-1 flex w-full border-b border-white bg-redMaquette" href="#">
+            <a class="flex-1 flex w-full border-b border-white bg-custom-color-2" href="TODO:">
                 <div class="py-10 flex flex-col justify-center items-center h-full flex-1 relative">
                     <div class="flex flex-col justify-center items-center relative -top-3">
                         <h4 class="relative font-bold text-white text-2xl telMobile">TELECHARGER</h4>
@@ -207,39 +241,54 @@
             </a>
         </div>
     </div>
-</section>
-<section class="flex 2xl:flex-row flex-col sectionActus 2xl:h-screen w-full relative bg-bleuMaquette overflow-hidden 2xl:pb-0 pb-40">
+</main>
+<section
+        class="flex 2xl:flex-row flex-col sectionActus 2xl:h-screen w-full relative bg-custom-color-3 overflow-hidden 2xl:pb-0 pb-40">
     <div class="mt-10 2xl:mt-0 w-full 2xl:w-[60%] h-full flex justify-center items-center flex-col">
         <div class="flex justify-end w-full relative">
             <div class="hidden lg:flex w-1/5 h-full absolute left-0">
-                <div class="parallelogram"></div>
-                <div class="traitActus absolute right-0 h-[60%] bg-redMaquette w-[5px] bottom-0"></div>
+                <div class="parallelogram" aria-hidden="true"></div>
+                <div class="traitActus absolute right-0 h-[60%] bg-custom-color-2 w-[5px] bottom-0"></div>
             </div>
             <div class="flex flex-col w-full lg:w-4/5 h-full blocActu">
-                <h3 class="text-white font-bold text-5xl bg-redMaquette px-10 py-3 w-fit mb-5">A LA UNE</h3>
+                <h3 class="text-white font-bold text-5xl bg-custom-color-2 px-10 py-3 w-fit mb-5">A LA UNE</h3>
                 <div class="flex flex-col h-full w-full justify-start items-start lg:ml-16 lg:max-w-[700px]">
-                    <a href="#" class="flex flex-col justify-center sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
-                        <span class="redMaquette font-bold text-2xl">13/11/2024</span><p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau de chaleur urbain</p>
+                    <a href="TODO:"
+                       class="flex flex-col justify-center sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
+                        <span class="text-custom-color-2 font-bold text-2xl">13/11/2024</span>
+                        <p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau
+                            de chaleur urbain</p>
                     </a>
-                    <a href="#" class="flex justify-center flex-col sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
-                        <span class="redMaquette font-bold text-2xl">13/11/2024</span><p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau de chaleur urbain test de la machine en explosion thermique</p>
+                    <a href="TODO:"
+                       class="flex justify-center flex-col sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
+                        <span class="text-custom-color-2 font-bold text-2xl">13/11/2024</span>
+                        <p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau
+                            de chaleur urbain test de la machine en explosion thermique</p>
                     </a>
-                    <a href="#" class="flex justify-center flex-col sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
-                        <span class="redMaquette font-bold text-2xl">13/11/2024</span><p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau de chaleur urbain</p>
+                    <a href="TODO:"
+                       class="flex justify-center flex-col sm:flex-row border-b border-white py-4 lg:w-fit w-full lg:px-0 px-3">
+                        <span class="text-custom-color-2 font-bold text-2xl">13/11/2024</span>
+                        <p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau
+                            de chaleur urbain</p>
                     </a>
-                    <a href="#" class="flex justify-center flex-col sm:flex-row py-4 pb-0 lg:w-fit w-full lg:px-0 px-3">
-                        <span class="redMaquette font-bold text-2xl">13/11/2024</span><p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau de chaleur urbain</p>
+                    <a href="TODO:"
+                       class="flex justify-center flex-col sm:flex-row py-4 pb-0 lg:w-fit w-full lg:px-0 px-3">
+                        <span class="text-custom-color-2 font-bold text-2xl">13/11/2024</span>
+                        <p class="text-white font-bold ml-2 text-2xl transition ease-in-out"> - Inauguration du réseau
+                            de chaleur urbain</p>
                     </a>
                 </div>
             </div>
         </div>
-        <a href="#" class="w-[100%] 2xl:w-[65%] flex text-end goldText underline uppercase justify-center hover:text-white mb-10 2xl:mb-0 2xl:justify-end mt-10 lg:mt-20">VOIR TOUTE L'ACTUALITE</a>
+        <a href="TODO:"
+           class="w-[100%] 2xl:w-[65%] flex text-end text-custom-color-4 underline uppercase justify-center hover:text-white mb-10 2xl:mb-0 2xl:justify-end mt-10 lg:mt-20">VOIR
+            TOUTE L'ACTUALITE</a>
     </div>
     <div class="w-full 2xl:w-[40%] h-full flex flex-col justify-center items-center blocAgenda">
         <div class="flex w-full justify-center sm:justify-end">
 
             <div class="flex flex-col relative">
-                <div class="flex flex-col justify-center items-center bg-greenMaquette p-4 h-fit">
+                <div class="flex flex-col justify-center items-center bg-custom-color-1 p-4 h-fit">
                     <div class="flex flex-col">
                         <div class="digit-group hidden-group" data-value="13">
                             <div class="digit text-7xl">0</div>
@@ -258,19 +307,22 @@
                         <span class="text-sm text-white text-center">2024</span>
                     </div>
                 </div>
-                <div class="petitParallelogram"></div>
+                <div class="petitParallelogram" aria-hidden="true"></div>
             </div>
 
 
-            <a href="#" class="h-[400px] w-[283px] overflow-hidden">
-                <img src="./src/img/affiche_bd.jpg" alt="affiche" class="object-cover hover:w-[105%] hover:h-[105%] h-full w-full transition-all duration-500 ease-in-out">
+            <a href="TODO:" class="h-[400px] w-[283px] overflow-hidden">
+                <img src="./src/img/affiche_bd.jpg" alt="affiche"
+                     class="object-cover hover:w-[105%] hover:h-[105%] h-full w-full transition-all duration-500 ease-in-out">
             </a>
-            <div class="hidden sm:flex w-1/4 relative">
+            <div class="hidden sm:flex w-1/4 relative" aria-hidden="true">
                 <div class="parallelogramAffiche"></div>
             </div>
         </div>
 
-        <a href="#" class="relative 2xl:left-14 goldText hover:text-white flex text-end goldText underline uppercase justify-end mt-10">voir tout l'agenda</a>
+        <a href="TODO:"
+           class="relative 2xl:left-14 hover:text-white flex text-end text-custom-color-4 underline uppercase justify-end mt-10">voir
+            tout l'agenda</a>
     </div>
     <div class="hashedBot"></div>
 </section>

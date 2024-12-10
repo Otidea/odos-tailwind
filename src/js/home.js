@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.blocRotate .bg-redMaquette').forEach(function (element) {
+    document.querySelectorAll('.blocRotate .bg-custom-color-2').forEach(function (element) {
         element.classList.add('show');
     });
 
