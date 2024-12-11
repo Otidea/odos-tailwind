@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   z-index: 30;
   opacity: 1;
 }
-@media (width >= 80rem) {
+@media (max-width: 1280px) {
   .splide__arrow {
     display: none;
   }
@@ -31,13 +31,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 .splide__pagination {
   display: none;
 }
-@media (width >= 80rem) {
+@media (max-width: 1280px) {
   .splide__pagination {
     display: flex;
   }
 }
 
-@media (width >= 80rem) {
+@media (max-width: 1280px) {
   .splide__pagination__page {
     background: var(--green);
     height: 25px;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: 0.3s;
 }
 
-.ombreSousBloc {
+.ombre-sous-bloc {
   background: url(../img/ombre_soulignement.svg) no-repeat;
   background-size: cover;
   height: 58px;
@@ -69,69 +69,69 @@ h1, h2, h3, h4, h5, h6, p, span {
   position: relative;
   transition: 0.3s;
 }
-@media (width >= 80rem) {
-  .ombreSousBloc {
+@media (max-width: 1280px) {
+  .ombre-sous-bloc {
     height: 30px;
   }
 }
 
-.sectionAutoBot a:hover .soulignement {
+.section-auto-bot a:hover .soulignement {
   width: 200px;
   transition: 0.3s;
 }
-.sectionAutoBot a:hover .ombreSousBloc {
+.section-auto-bot a:hover .ombre-sous-bloc {
   width: 350px;
   transition: 0.3s;
   left: 75px;
 }
 
-.blocRotate img {
+.bloc-rotate img {
   bottom: -190px;
   position: absolute;
   transition: 0.5s;
 }
 @media (max-width: 1550px) {
-  .blocRotate img {
+  .bloc-rotate img {
     height: 150px;
   }
 }
-.blocRotate .bg-custom-color-2 {
+.bloc-rotate .bg-custom-color-2 {
   transform: rotate(349deg);
   padding: 20px 20px 100px 70px;
   bottom: -230px;
   transition: 0.5s;
 }
 @media (max-width: 1550px) {
-  .blocRotate .bg-custom-color-2 {
+  .bloc-rotate .bg-custom-color-2 {
     transition: 0.5s;
     height: 150px;
     left: 5px;
     padding: 44px 20px 138px 70px;
   }
 }
-.blocRotate img.show {
+.bloc-rotate img.show {
   bottom: -50px;
   transition: 0.5s;
 }
 @media (max-width: 1550px) {
-  .blocRotate img.show {
+  .bloc-rotate img.show {
     bottom: -15px;
     transition: 0.5s;
     height: 150px;
     left: 5px;
   }
 }
-.blocRotate .bg-custom-color-2.show {
+.bloc-rotate .bg-custom-color-2.show {
   bottom: -30px;
   transition: 0.5s;
 }
 @media (max-width: 1550px) {
-  .blocRotate .bg-custom-color-2.show {
+  .bloc-rotate .bg-custom-color-2.show {
     bottom: -66px;
   }
 }
 
-.degraderVert {
+.degrader-vert {
   top: -27px;
   height: 150px;
   background: transparent linear-gradient(180deg, rgba(61, 158, 125, 0) 0%, var(--green) 18%, var(--green) 100%) 0% 0% no-repeat padding-box;
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: width 0.5s ease-in-out;
 }
 
-.parallelogramAffiche {
+.parallelogram-affiche {
   position: absolute;
   width: 0;
   transition: width 0.5s ease-in-out;
@@ -162,12 +162,12 @@ h1, h2, h3, h4, h5, h6, p, span {
   bottom: -100px;
 }
 
-.parallelogramAffiche.show {
+.parallelogram-affiche.show {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
 
-.petitParallelogram {
+.petit-parallelogram {
   position: absolute;
   width: 100%;
   height: 80px;
@@ -176,19 +176,19 @@ h1, h2, h3, h4, h5, h6, p, span {
   bottom: 0;
 }
 
-.sectionActus .text-custom-color-4::after {
+.section-actus .text-custom-color-4::after {
   position: relative;
   content: url("../img/flecheOr.svg");
   display: block;
   left: 20px;
   transition: 0.3s;
 }
-.sectionActus .text-custom-color-4:hover::after {
+.section-actus .text-custom-color-4:hover::after {
   transition: 0.3s;
   left: 30px;
 }
 
-.hashedBot {
+.hashed-bot {
   background: url(../img/hashBot.svg) no-repeat;
   background-size: cover;
   height: 10%;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   bottom: 0;
 }
 
-.telMobile::before {
+.tel-mobile::before {
   content: "";
   background: url(../img/picto_telephone.svg) no-repeat;
   background-size: cover;
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   width: 55px;
 }
 
-.blocActu a:hover p {
+.bloc-actu a:hover p {
   color: var(--red);
 }
 
@@ -232,18 +232,18 @@ h1, h2, h3, h4, h5, h6, p, span {
     transform: translateX(0);
   }
 }
-.blocRotate:hover img {
+.bloc-rotate:hover img {
   animation: shake 0.5s ease-in-out;
 }
 
 @media (min-width: 2000px) {
-  .blocAgenda {
+  .bloc-agenda {
     width: 70%;
   }
 }
 
 @media (min-width: 2000px) {
-  .blocAgenda .text-custom-color-4 {
+  .bloc-agenda .text-custom-color-4 {
     left: 13rem;
   }
 }

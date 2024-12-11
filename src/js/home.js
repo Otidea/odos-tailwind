@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.blocRotate .bg-custom-color-2').forEach(function (element) {
+    document.querySelectorAll('.bloc-rotate .bg-custom-color-2').forEach(function (element) {
         element.classList.add('show');
     });
 
     setTimeout(function () {
-        document.querySelectorAll('.blocRotate img').forEach(function (element) {
+        document.querySelectorAll('.bloc-rotate img').forEach(function (element) {
             element.classList.add('show');
         });
     }, 100);
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //APPARITION OMBRES
 
     const shadowNews = document.querySelectorAll(".parallelogram");
-    const shadowAgenda = document.querySelectorAll(".parallelogramAffiche");
+    const shadowAgenda = document.querySelectorAll(".parallelogram-affiche");
 
     const observerShadow = new IntersectionObserver(
         entries => {
